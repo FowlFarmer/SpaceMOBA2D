@@ -2,18 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.SceneManagement;
+using Photon.Realtime;
 
-public class LoadPhoton : MonoBehaviour
+public class LoadPhoton : MonoBehaviourPunCallbacks
 {
-    // Start is called before the first frame update
+
     private void Start()
     {
-        PhotonNetwork.ConnectUsingSettings();
+        print("Connecting to server");
+        PhotonNetwork.ConnectUsingSettings(); //CHANGE LATER TO CONNECTREGION USA
+        PhotonNetwork.GameVersion = "0.0.1";
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public override void OnConnectedToMaster()
     {
-        
+        print("Connected to server");
+        PhotonNetwork.JoinLobby();
+    }
+    public override void OnDisconnected(DisconnectCause cause)
+    {
+        print("Disconnected from server");
+    }
+    public override void OnJoinedLobby()
+    {
+        SceneManager.LoadScene("Lobby");
     }
 }

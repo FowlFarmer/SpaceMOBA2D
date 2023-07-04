@@ -1,0 +1,1 @@
+- Change LoadPhoton to Connect region USA on fullbuild
