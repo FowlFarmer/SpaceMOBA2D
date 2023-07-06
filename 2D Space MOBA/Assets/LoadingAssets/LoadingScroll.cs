@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class LoadingBGScroll : MonoBehaviour
 {
-    public float moveSpeed = 0.2f;
-    public float teleportPosition = 6f;
-    public Vector3 teleportTarget = new Vector3(-6f, 0f, 0f);
+    public float moveSpeed = 50f;
+    public float teleportPosition = 1300f;
+    public Vector3 teleportTarget = new Vector3(-1700f, 0f, 0f);
 
     private bool isMoving = true;
 

@@ -7,9 +7,10 @@ using Photon.Realtime;
 
 public class LoadPhoton : MonoBehaviourPunCallbacks
 {
-
+    private bool fullscreen = false;
     private void Start()
     {
+        Screen.SetResolution(1280, 720, fullscreen);
         print("Connecting to server");
         PhotonNetwork.ConnectUsingSettings(); //CHANGE LATER TO CONNECTREGION USA
         PhotonNetwork.GameVersion = "0.0.1";

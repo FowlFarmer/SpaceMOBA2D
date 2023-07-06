@@ -9,6 +9,12 @@ public class BackgroundDestruction : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(gameObject);
+        
+    }
+
+
+    void Update()
+    {
         Scene currentScene = SceneManager.GetActiveScene();
         if (currentScene.name != "Loading")
         {
@@ -17,11 +23,5 @@ public class BackgroundDestruction : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-    }
-
-
-    void Update()
-    {
-        
     }
 }
