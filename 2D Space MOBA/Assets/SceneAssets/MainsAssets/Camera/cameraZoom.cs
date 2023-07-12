@@ -4,8 +4,12 @@ public class cameraZoom : MonoBehaviour
 {
     public float zoomSpeed = 5f;
     public float minSize = 5f;
-    public float maxSize = 10f;
+    public float maxSize = 25f;
 
+    private void Start()
+    {
+        Screen.SetResolution(Screen.currentResolution.width, Screen.currentResolution.height, true);
+    }
     private void Update()
     {
         // Get the scroll input
