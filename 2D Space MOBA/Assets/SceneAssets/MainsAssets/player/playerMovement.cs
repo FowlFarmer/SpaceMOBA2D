@@ -46,11 +46,6 @@ public class playerMovement : MonoBehaviour
                 // Rotate counterclockwise
                 transform.Translate(Vector3.left * moveSpeed/2 * Time.deltaTime);
             }
-            if (Input.GetKey(KeyCode.P))
-            {
-                PlayerSpecs.Speed++;
-                Debug.Log("Increased speed");
-            }
         }
     }
 }

@@ -12,8 +12,9 @@ public class PlayerSpecs : MonoBehaviour
     public static float Speed = 3f;
     public static float ArmorPenetration = 0f;
     public static float AntiAbsorbance = 0f;
-    public static float CurrentHealth = Health;
 
+    public static float CurrentHealth = Health;
+    /*
     private float pHealth = 500f;
     private float pPhysicalPower = 50f;
     private float pEnergyPower = 50f;
@@ -22,25 +23,51 @@ public class PlayerSpecs : MonoBehaviour
     private float pSpeed = 30f;
     private float pArmorPenetration = 0f;
     private float pAntiAbsorbance = 0f;
-
+    */
 
     void Update()
     {
+        /*
         if(pHealth != Health)
         {
-            Debug.Log("Health changed from" + pHealth + "to" + Health);
+            Debug.Log("Health changed from " + pHealth + " to " + Health);
             pHealth = Health;
         }
         if (pPhysicalPower != PhysicalPower)
         {
-            Debug.Log("PhysicalPower changed from" + pPhysicalPower + "to" + PhysicalPower);
+            Debug.Log("PhysicalPower changed from " + pPhysicalPower + " to " + PhysicalPower);
             pPhysicalPower = PhysicalPower;
         }
         if (pSpeed != Speed)
         {
-            Debug.Log("Speed changed from" + pSpeed + "to" + Speed);
+            Debug.Log("Speed changed from " + pSpeed + " to " + Speed);
             pSpeed = Speed;
         }
+        if (pEnergyPower != EnergyPower)
+        {
+            Debug.Log("EnergyPower changed from " + pEnergyPower + " to " + EnergyPower);
+            pEnergyPower = EnergyPower;
+        }
+        if (pSpeed != Speed)
+        {
+            Debug.Log("Speed changed from " + pSpeed + " to " + Speed);
+            pSpeed = Speed;
+        }
+        if (pSpeed != Speed)
+        {
+            Debug.Log("Speed changed from " + pSpeed + " to " + Speed);
+            pSpeed = Speed;
+        }
+        if (pSpeed != Speed)
+        {
+            Debug.Log("Speed changed from " + pSpeed + " to " + Speed);
+            pSpeed = Speed;
+        }
+        if (pSpeed != Speed)
+        {
+            Debug.Log("Speed changed from " + pSpeed + " to " + Speed);
+            pSpeed = Speed;
+        }*/
     }
 
 
